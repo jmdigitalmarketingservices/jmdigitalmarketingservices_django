@@ -28,6 +28,11 @@
                             <div class="mb-3">
                                 <input placeholder="Website URL" type="text" class="form-control" id="Website URL">
                             </div>
+                            <label class="form-check-label mb-3" for="flexCheckDefault">
+                                When you click submit it is understood that you have accepted our <a
+                                    href="{% url 'privacy' %}">Privacy Policy</a> and <a href="{% url 'term' %}">Terms
+                                & Condition</a>
+                            </label>
                             <button type="submit" class="float-end btn btn-primary">Submit</button>
                         </form>
                     </div>
