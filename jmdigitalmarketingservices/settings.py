@@ -128,3 +128,5 @@ if DEBUG:
     ]
 if DEBUG is False:
     STATIC_ROOT = os.path.join(BASE_DIR, "statics")
+
+DISTILL_DIR = os.path.join(BASE_DIR, "docs")

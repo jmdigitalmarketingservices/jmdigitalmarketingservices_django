@@ -43,6 +43,8 @@ def get_index():
 urlpatterns = [
     path('admin/', admin.site.urls),
     distill_path('', home.view, name="home", distill_func=get_index),
+    distill_path('', home.not_found_view, name="not_found", distill_func=get_index, distill_file="404.html"),
+    distill_path('', home.cname_view, name="cname", distill_func=get_index, distill_file="CNAME"),
     distill_path('about/', about.view, name="about", distill_func=get_index),
     distill_path('seo/', seo.view, name="seo", distill_func=get_index),
     distill_path('social-media-marketing/', social_media.view, name="social_media", distill_func=get_index),
