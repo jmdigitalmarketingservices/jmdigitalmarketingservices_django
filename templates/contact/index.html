@@ -1,0 +1,44 @@
+{% extends "BASE.html" %}
+{% load static %}
+
+{% block content %}
+<div class="mt-5" style="min-height: 10px"></div>
+    <section class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 d-sm-block d-md-none mb-3">
+                    <div class="img-responsive"><img src="{% static '/images/illustrations/undraw_contact_us_15o2.svg' %}"
+                                                     alt="Contact Map" class="img-fluid"></div>
+                </div>
+                <div class="col-md-4 col-sm-12 d-flex align-items-center">
+                    <div class="contact-form w-100">
+                        <h1 class="text-primary ">CONTACT US</h1>
+                        <p class="">We are happy to respond to any queries you may have</p>
+                        <form>
+                            <div class="mb-3">
+                                <input placeholder="Email address" type="email" class="form-control"
+                                       id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <input placeholder="Name" type="text" class="form-control" id="name">
+                            </div>
+                            <div class="mb-3">
+                                <input placeholder="Phone" type="text" class="form-control" id="Phone">
+                            </div>
+                            <div class="mb-3">
+                                <input placeholder="Website URL" type="text" class="form-control" id="Website URL">
+                            </div>
+                            <button type="submit" class="float-end btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-7 d-sm-none d-none d-md-flex d-flex align-items-center">
+                    <div class="img-responsive"><img src="{% static '/images/illustrations/undraw_contact_us_15o2.svg' %}"
+                                                     alt="Contact Map" class="img-fluid"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="mt-5" style="min-height: 10px"></div>
+{% endblock %}

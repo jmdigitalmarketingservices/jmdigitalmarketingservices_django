@@ -1,0 +1,22 @@
+$primary: #AB2427 !default;
+$secondary: #CACACA !default;
+$success: #015668 !default;
+$danger: #06648C !default;
+$info: #0F81C7 !default;
+$warning: #0DE2EA !default;
+$light: #ECECEC !default;
+$dark: #222222 !default;
+$dark-primary: #2F2E41 !default;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark
+) !default;
+
+$dark-secondary: darken($secondary, 40%);

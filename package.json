@@ -1,0 +1,12 @@
+{
+  "name": "jmdigitalmarketingservices.ca",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "scss": "sass --watch scss/style.scss statics/css/style.css --style compressed"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta2"
+  }
+}

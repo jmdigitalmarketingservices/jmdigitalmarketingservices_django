@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "HEAD.html" %}
+<body>
+
+{% include "NAVBAR.html" %}
+
+<div class="content margin-top">
+    {% block content %}
+
+    {% endblock %}
+
+    {% include "FOOTER.html" %}
+</div>
+{% include "SCRIPTS.html" %}
+</body>
+</html>

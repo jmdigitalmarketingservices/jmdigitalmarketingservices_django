@@ -1,0 +1,67 @@
+.pages-banner {
+  .title {
+    font-size: 2.5rem;
+    span {
+      color: $primary;
+    }
+  }
+
+  img {
+    max-height: 280px;
+  }
+}
+
+.pages-bottom-banner-belt {
+  padding: 30px 0;
+  .text {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: $light;
+
+    span {
+      color: lighten($dark, 65%);
+    }
+  }
+}
+
+.text-justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.details-section {
+  text-align: center;
+  p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-weight: 200;
+  }
+  img {
+    padding: 20px;
+    max-width: 220px;
+    margin-bottom: 20px;
+  }
+}
+
+.contact-section {
+  margin-top: 30px;
+}
+
+.text-section {
+  li {
+    list-style: none;
+
+    i {
+      margin-right: 5px;
+    }
+  }
+  //li::before {
+  //  content: "\f054";
+  //  font-family: "Font Awesome 5 Free";
+  //  color: darken($light, 20%);
+  //  font-weight: 700;
+  //  margin-right: 5px;
+  //  font-size: 15px;
+  //}
+}

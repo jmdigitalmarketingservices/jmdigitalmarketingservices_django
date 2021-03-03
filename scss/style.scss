@@ -1,0 +1,709 @@
+@import "variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "utils";
+
+// Navigation Part
+
+.navbar-brand {
+  font-weight: 700;
+
+  img {
+    max-width: 200px
+  }
+}
+
+.margin-top {
+  margin-top: $top-margin;
+}
+
+.dropdown-toggle::after {
+  content: none;
+}
+
+.show.dropdown .dropdown-toggle::after {
+  transform: translateY(3px);
+}
+
+.nav-item {
+  margin-right: 10px;
+}
+
+.nav-link {
+  display: flex !important;
+  align-items: center !important;
+  font-weight: bold;
+
+  .lnr {
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+}
+
+// Contents
+
+// Shapes
+
+// Bottom Left Triangle
+
+hr {
+  margin: 0 0 20px 0;
+}
+
+.triangle {
+  z-index: -1;
+  position: absolute;
+  top: $top-margin;
+  bottom: 0;
+}
+
+.triangle-bottom-left {
+  width: 0;
+  height: 0;
+  border-bottom: calc(100vh - 76px) solid $light;
+  border-right: 120vw solid transparent;
+}
+
+// Banner
+
+.banner-section {
+  min-height: 40vh;
+  background-position-y: bottom;
+  background-size: calc(100vw + 50px);
+  .banner {
+
+    .banner-header-main {
+      h1, .title {
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 1.2;
+        color: $light;
+      }
+
+      h2, .subtitle {
+        font-weight: 400;
+        color: $light;
+      }
+
+      span, .special {
+        color: $primary;
+      }
+
+      ul {
+        li {
+          font-size: 1.2rem;
+          color: $light;
+        }
+      }
+
+      @media (max-width: 786px) {
+        h1, .title {
+          padding-top: 15px;
+          font-size: 2rem;
+        }
+      }
+    }
+
+    .banner-phone-number {
+      font-size: 1.25rem;
+    }
+
+    .banner-header {
+      h1, .title {
+        line-height: 1.2;
+        font-weight: 700;
+        font-size: 1.7rem;
+        direction: rtl;
+        padding: 15px 0 0 0;
+        color: $light;
+      }
+
+      h2, .subtitle {
+        font-weight: 400;
+        direction: rtl;
+        font-size: 1.45rem;
+        font-style: italic;
+        color: $light;
+      }
+
+      span, .special {
+        color: $primary;
+      }
+
+      @media (max-width: 786px) {
+        h1, .title {
+          padding-top: 10px;
+          direction: ltr;
+        }
+
+        h2, .subtitle {
+          direction: ltr;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+
+      .contact-form {
+        margin-bottom: 20px !important;
+      }
+    }
+  }
+}
+
+
+// Service Section
+
+.service {
+  margin-top: 20px;
+  width: 100%;
+  .service-logo {
+    margin-bottom: 20px;
+
+    .lnr {
+      font-size: 40px;
+      font-weight: bolder;
+    }
+
+    .icon {
+      font-size: 44px;
+      font-weight: bolder;
+    }
+  }
+  .service-details {
+    height: 220px;
+    overflow-y: hidden;
+    ul {
+      li {
+        padding-top: 5px;
+        font-weight: 600;
+      }
+      li::before {
+        content: "\f054";
+        font-family: "Font Awesome 5 Free", sans-serif;
+        color: darken($light, 20%);
+        font-weight: 700;
+        margin-right: 5px;
+        font-size: 15px;
+      }
+    }
+  }
+  .service-action-button {
+    a {
+      padding: 10px 20px;
+      width: 100%;
+    }
+  }
+}
+
+// About Section
+
+.about-section {
+  margin: 50px 0;
+  $about-full-width: 1000px;
+
+  .container {
+    .row {
+      img {
+        max-width: $about-full-width / 3;
+      }
+
+      p {
+        max-width: $about-full-width / 2;
+        font-weight: 300;
+        color: $dark;
+      }
+    }
+    @media (min-width: 786px) {
+      .row:nth-child(odd) {
+        margin-bottom: 50px;
+        img {
+          float: right;
+        }
+        p {
+          direction: ltr;
+        }
+      }
+      .row:nth-child(even) {
+        img {
+          float: left;
+        }
+        .about-heading {
+          float: right;
+        }
+        p {
+          direction: rtl;
+          float: right;
+        }
+      }
+    }
+
+    @media (max-width: 786px) {
+
+      .row {
+        margin-bottom: 0;
+      }
+
+      .about-text {
+        text-align: center;
+      }
+
+      .about-img {
+        max-width: $about-full-width / 3.5;
+        margin-bottom: 20px;
+      }
+
+      .img-mobile {
+        text-align: center;
+      }
+    }
+  }
+
+  .about-heading {
+    color: $primary;
+  }
+}
+
+// beautiful-bar
+
+.beautiful-bar {
+  padding: 15px 0;
+  background-color: $primary;
+  .row {
+    * {
+      text-align: center;
+      color: $light;
+      font-family: Poppins, sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      padding: 10px 0;
+    }
+  }
+}
+
+// Contact Section
+
+.contact-section {
+  .contact-form {
+    h1, .title {
+      font-size: 2.3rem;
+    }
+  }
+}
+
+// footer bar
+
+.bg-dark-primary {
+  background-color: $dark-primary;
+}
+
+.footer {
+  hr {
+    color: $light;
+  }
+
+  ul {
+    li {
+      padding-bottom: 7px;
+    }
+  }
+
+  a, p {
+    text-decoration: none;
+    color: $light;
+  }
+
+  a:hover {
+    color: lighten($primary, 30%);
+  }
+}
+
+// Shi**ty medias
+
+// iPad Pro
+
+@media (max-width: 1024px) and (min-height: 1366px) {
+  .banner-section {
+    .banner {
+      .banner-header-main {
+        h1, .title {
+          font-size: 2.5rem;
+        }
+
+        h2, .subtitle {
+
+        }
+
+        span, .special {
+
+        }
+
+        ul {
+          li {
+
+          }
+        }
+      }
+
+      .banner-header {
+        h1, .title {
+
+        }
+
+        h2, .subtitle {
+
+        }
+
+        span, .special {
+
+        }
+      }
+    }
+  }
+}
+
+// Moto G4
+
+@media (max-width: 360px) and (min-height: 640px) {
+  .banner-section {
+    .banner {
+      .banner-header-main {
+        h1, .title {
+
+        }
+
+        h2, .subtitle {
+
+        }
+
+        span, .special {
+
+        }
+
+        ul {
+          li {
+
+          }
+        }
+      }
+
+      .banner-header {
+        h1, .title {
+
+        }
+
+        h2, .subtitle {
+
+        }
+
+        span, .special {
+
+        }
+      }
+    }
+  }
+}
+
+// iphone-x (375 X 812)
+
+@media (max-width: 375px) and (min-height: 812px) {
+  .banner-section {
+    .banner {
+      .banner-header-main {
+        h1, .title {
+
+        }
+
+        h2, .subtitle {
+
+        }
+
+        span, .special {
+
+        }
+
+        ul {
+          li {
+
+          }
+        }
+      }
+
+      .banner-header {
+        h1, .title {
+
+        }
+
+        h2, .subtitle {
+
+        }
+
+        span, .special {
+
+        }
+      }
+    }
+  }
+}
+
+// iphone-5/SE (350 X 568)
+
+@media (max-width: 350px) and (min-height: 568px) {
+  .banner-section {
+    .banner {
+      .banner-header-main {
+        h1, .title {
+
+        }
+
+        h2, .subtitle {
+
+        }
+
+        span, .special {
+
+        }
+
+        ul {
+          li {
+
+          }
+        }
+      }
+
+      .banner-header {
+        h1, .title {
+
+        }
+
+        h2, .subtitle {
+
+        }
+
+        span, .special {
+
+        }
+      }
+    }
+  }
+}
+
+// pixel 2 XL (411 X 823)
+
+@media (max-width: 411px) and (min-height: 823px) {
+  .banner-section {
+    .banner {
+      .banner-header-main {
+        h1, .title {
+
+        }
+
+        h2, .subtitle {
+
+        }
+
+        span, .special {
+
+        }
+
+        ul {
+          li {
+
+          }
+        }
+      }
+
+      .banner-header {
+        h1, .title {
+
+        }
+
+        h2, .subtitle {
+
+        }
+
+        span, .special {
+
+        }
+      }
+    }
+  }
+}
+
+// Surface Duo
+
+@media (max-width: 540px) and (min-height: 720px) {
+  .banner-section {
+    .banner {
+      .banner-header-main {
+        h1, .title {
+          font-size: 1.6rem;
+        }
+
+        h2, .subtitle {
+
+        }
+
+        span, .special {
+
+        }
+
+        ul {
+          li {
+
+          }
+        }
+      }
+
+      .banner-header {
+        h1, .title {
+          font-size: 1.6rem;
+        }
+
+        h2, .subtitle {
+          font-size: 1.1rem;
+        }
+
+        span, .special {
+
+        }
+      }
+    }
+  }
+}
+
+// Galaxy Fold (280 X 653)
+
+@media (max-width: 280px) and (min-height: 653px) {
+  .banner-section {
+    .banner {
+      .banner-header-main {
+        h1, .title {
+
+        }
+
+        h2, .subtitle {
+
+        }
+
+        span, .special {
+
+        }
+
+        ul {
+          li {
+
+          }
+        }
+      }
+
+      .banner-header {
+        h1, .title {
+
+        }
+
+        h2, .subtitle {
+
+        }
+
+        span, .special {
+
+        }
+      }
+    }
+  }
+  .navbar-brand {
+    img {
+      max-width: 150px
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .margin-top {
+    margin-top: $top-margin + 55px;
+  }
+  .navbar-collapse {
+    position: absolute;
+    top: 54px;
+    left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    background-color: $light;
+  }
+}
+
+@media (max-width: 991px) {
+  .banner-header {
+    h1 {
+      font-size: 3.0rem;
+      font-weight: 600;
+      line-height: 0.9;
+      padding: 0 20px;
+      color: $dark;
+    }
+    h2 {
+      padding: 0 20px;
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .services-section {
+    .service-details {
+      height: auto;
+    }
+  }
+  .banner-section {
+
+  }
+  .banner-header {
+    h1 {
+      font-size: 2.0rem;
+      font-weight: 600;
+      line-height: 0.9;
+      padding: 0 20px;
+      color: $dark;
+    }
+    h2 {
+      padding: 0 20px;
+      font-size: 20px;
+    }
+  }
+  .margin-top {
+    margin-top: $top-margin;
+  }
+  .navbar-collapse {
+    position: absolute;
+    height: 100vh;
+    width: auto;
+    top: 56px;
+    left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    background-color: $light;
+  }
+  .navbar-collapse.collapsing {
+    -webkit-transition: left 0.3s ease;
+    -o-transition: left 0.3s ease;
+    -moz-transition: left 0.3s ease;
+    transition: left 0.3s ease;
+    left: -100%;
+    height: 100vh;
+  }
+  .navbar-collapse.show {
+    left: 0;
+    -webkit-transition: left 0.3s ease-in;
+    -o-transition: left 0.3s ease-in;
+    -moz-transition: left 0.3s ease-in;
+    transition: left 0.3s ease-in;
+    height: 100vh;
+  }
+}
+
+@import "pages-styles";
+@import "seo-styles";

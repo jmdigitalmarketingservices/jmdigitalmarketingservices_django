@@ -1,0 +1,252 @@
+{% extends "BASE.html" %}
+{% load static %}
+
+{% block content %}
+<section class="banner-section bg-dark-primary">
+    <div class="container">
+        <div class="row banner background-parallax">
+            <div class="col-md-6 my-md-5 my-sm-2 d-flex justify-content-center flex-column">
+                <div class="banner-header-main">
+                    <h1 class="title"><span>DIGITAL</span> MARKETING SERVICES <span>AGENCY</span></h1>
+                    <h3 class="subtitle"><i>We Specialize in:</i></h3>
+                    <ul>
+                        <li>Search Engine Optimization</li>
+                        <li>Online Advertising</li>
+                        <li>Business Social Media</li>
+                        <li>Website Development & Graphic Design</li>
+                        <li>App Development</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 my-md-5 mb-sm-2 d-flex justify-content-center flex-column">
+                <div class="banner-header">
+                    <h1>
+                        GROW YOUR <span>TRAFFIC</span>, <span>LEADS</span> & <span>REVENUE</span>
+                    </h1>
+                    <h3 class="subtitle">Get A Free Site Audit & Consultation Today</h3>
+                </div>
+                <div class="contact-form w-100">
+                    <h3 class="text-center bg-secondary p-2 rounded-3 banner-phone-number"><i
+                            class="fas text-primary fa-phone-alt me-2"></i> CALL NOW <a class="text-decoration-none"
+                                                                                        href="tel:+1(647) 990-2414">+1(647)
+                        990-2414</a></h3>
+                    <form class="mt-4">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input placeholder="Email address" type="email" class="form-control"
+                                       aria-describedby="emailHelp">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input placeholder="Name" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input placeholder="Phone" type="text" class="form-control">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input placeholder="Website URL" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="services-section mt-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="service">
+                    <div class="service-logo text-center">
+                        <i class="icon fab fa-searchengin"></i>
+                    </div>
+                    <div class="service-name text-center">
+                        <h2 class="text-primary">SEO</h2>
+                    </div>
+                    <div class="service-details">
+                        <ul class="list-unstyled">
+                            <li>Organic traffic research & growth</li>
+                            <li>Content Optimization</li>
+                            <li>Increase relevant links to your website</li>
+                            <li>Get qualified sales, leads and increase revenue</li>
+                        </ul>
+                    </div>
+                    <div class="service-action-button text-center">
+                        <a href="{% url 'seo' %}" class="btn btn-block btn-primary">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="service">
+                    <div class="service-logo text-center">
+                        <i class="icon fas fa-share-alt-square"></i>
+                    </div>
+                    <div class="service-name text-center">
+                        <h2 class="text-primary">SOCIAL MEDIA</h2>
+                    </div>
+                    <div class="service-details">
+                        <ul class="list-unstyled">
+                            <li>Grow your brand awareness</li>
+                            <li>Increase traffic to your website</li>
+                            <li>Post creation and engagement</li>
+                            <li>Pixel creation and analytics</li>
+                        </ul>
+                    </div>
+                    <div class="service-action-button text-center">
+                        <a href="{% url 'social_media' %}" class="btn btn-block btn-primary">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="service">
+                    <div class="service-logo text-center">
+                        <span class="lnr lnr-laptop-phone"></span>
+                    </div>
+                    <div class="service-name text-center">
+                        <h2 class="text-primary">UI/UX DESIGN</h2>
+                    </div>
+                    <div class="service-details">
+                        <ul class="list-unstyled">
+                            <li>Build engaging and stunning websites</li>
+                            <li>Create highly converting Ecommerce stores</li>
+                            <li>Optimise content for SEO and responsive design</li>
+                            <li>Logo and graphic design for all media</li>
+                        </ul>
+                    </div>
+                    <div class="service-action-button text-center">
+                        <a href="/{% url 'web_development' %}" class="btn btn-block btn-primary">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="service">
+                    <div class="service-logo text-center">
+                        <span class="lnr lnr-smartphone"></span>
+                    </div>
+                    <div class="service-name text-center">
+                        <h2 class="text-primary">App Development</h2>
+                    </div>
+                    <div class="service-details">
+                        <ul class="list-unstyled">
+                            <li>Get instant traffic to your website</li>
+                            <li>Maximize the ROI on your PPC Investment</li>
+                            <li>Increase the quality of website leads</li>
+                            <li>Improve the amount of targeted traffic to your website</li>
+                        </ul>
+                    </div>
+                    <div class="service-action-button text-center">
+                        <a href="{% url 'app_development' %}" class="btn btn-block btn-primary">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-section d-flex align-items-center align-content-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 img-mobile d-md-none d-sm-flex align-items-center">
+                <div class="img-responsive">
+                    <img src="{% static 'images/illustrations/undraw_segment_analysis_bdn4.svg' %}"
+                         class="img-fluid about-img"
+                         alt="">
+                </div>
+            </div>
+            <div class="col-md-6 img-not-mobile d-none d-md-block d-sm-none">
+                <div class="img-responsive">
+                    <img src="{% static 'images/illustrations/undraw_segment_analysis_bdn4.svg' %}"
+                         class="img-fluid about-img"
+                         alt="">
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 d-flex align-items-center">
+                <div class="about-text">
+                    <h2 class="about-heading">ABOUT US</h2>
+                    <p class="about-body">
+                        J.M. Digital Marketing Services is a full-fledged digital marketing services agency that
+                        has been serving the city of Toronto, Canada since 2010. We are experts in the field of
+                        search engine optimization,
+                        social media marketing, web development, graphic design and app development. We offer
+                        economical and budget based programs to increase traffic, generate leads and boost your
+                        sales revenue
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 img-mobile d-md-none d-sm-block">
+                <div class="img-responsive">
+                    <img src="{% static 'images/illustrations/undraw_completed_ngx6.svg' %}" class="img-fluid about-img"
+                         alt="">
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 d-flex align-items-center">
+                <div class="about-text">
+                    <h2 class="about-heading">OUR GOAL</h2>
+                    <p class="about-body">
+                        Our team of expert professionals have one objective in mind, which is to - grow your brand,
+                        increase your rankings and generate highly qualified sales leads for your business
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="img-responsive img-not-mobile d-none d-md-block d-sm-none">
+                    <img src="{% static 'images/illustrations/undraw_completed_ngx6.svg' %}" class="img-fluid about-img"
+                         alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 img-mobile d-md-none d-sm-block">
+                <div class="img-responsive">
+                    <img src="{% static 'images/illustrations/undraw_businessman_97x4.svg' %}"
+                         class="img-fluid about-img" alt="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="img-responsive img-not-mobile d-none d-md-block d-sm-none">
+                    <img src="{% static 'images/illustrations/undraw_businessman_97x4.svg' %}"
+                         class="img-fluid about-img" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 d-flex align-items-center">
+                <div class="about-text">
+                    <h2 class="about-heading">OUR PLAN OF ACTION</h2>
+                    <p class="about-body">
+                        At J. M. Digital our technical staff only use White Hat, industry-recommended SEO
+                        techniques. The reputation of your business is our chief concern and we safeguard it all
+                        costs
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 img-mobile d-md-none d-sm-block">
+                <div class="img-responsive">
+                    <img src="{% static 'images/illustrations/undraw_pie_chart_6efe.svg' %}" class="img-fluid about-img"
+                         alt="">
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 d-flex align-items-center">
+                <div class="about-text">
+                    <h2 class="about-heading">OUR MISSION</h2>
+                    <p class="about-body">
+                        Our mission is to provide you with the best ROI for every dollar spent on your digital
+                        marketing campaign, by generating high traffic and increasing business revenue
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 img-not-mobile d-md-block d-sm-none d-none">
+                <div class="img-responsive">
+                    <img src="{% static 'images/illustrations/undraw_pie_chart_6efe.svg' %}" class="img-fluid about-img"
+                         alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

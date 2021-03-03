@@ -1,0 +1,35 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="{% url 'home' %}">
+            <img src="{% static 'images/logo-transparent.png' %}" class="img-responsive img-fluid" alt="JmDigitalMarketingServicesLogo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse"></div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="{% url 'about' %}" class="nav-link"><span class="lnr lnr-book"></span>About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'seo' %}" class="nav-link"><span class="lnr lnr-magnifier"></span>SEO</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'social_media' %}" class="nav-link"><span class="lnr lnr-users"></span>Social Media</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'web_development' %}" class="nav-link"><span class="lnr lnr-laptop-phone"></span>Web Development</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'app_development' %}" class="nav-link"><span class="lnr lnr-smartphone"></span>App Development</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'contact' %}" class="nav-link"><span class="lnr lnr-phone"></span>Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,36 @@
+{% extends "BASE.html" %}
+{% load static %}
+
+{% block content %}
+<section class="pages-banner spacial-banner-background">
+        <div class="container">
+            <div class="row">
+                <div
+                        class="d-sm-block my-4 d-md-none col-md-5 text-center">
+                    <img src="{% static '/images/illustrations/undraw_Mobile_application_mr4r.svg' %}" class="img-fluid" alt="APP-DEVELOPMENT-IMAGE">
+                </div>
+                <div class="col-md-7 d-sm-block d-md-flex flex-column justify-content-center align-items-baseline half-screen-height-min">
+                    <h1 class="title">APP DEVELOPMENT</h1>
+                    <h2 class="subtitle">MOBILE APP DESIGN AND DEVELOPMENT</h2>
+                    <a href="#Contact" class="btn btn-lg btn-primary">START NOW</a>
+                </div>
+                <div class="d-none col-md-5 d-sm-none d-md-flex half-screen-height-min d-flex flex-column justify-content-center align-items-center">
+                    <img src="{% static '/images/illustrations/undraw_Mobile_application_mr4r.svg' %}" class="img-fluid" alt="APP-DEVELOPMENT-IMAGE">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="pages-bottom-banner-belt">
+                        <h1 class="text">
+                            Scale your business with the help of powerful native mobile applications (IOS and Android) built by our experienced app developers and designed to meet all your requirements.
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

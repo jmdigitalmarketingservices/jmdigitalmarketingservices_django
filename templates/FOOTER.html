@@ -1,0 +1,174 @@
+{% load static %}
+<section class="beautiful-bar">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">Digital Marketing Services Agency</div>
+            <div class="col-md-3">Economical SEO Services</div>
+            <div class="col-md-3">Social Media Marketing</div>
+            <div class="col-md-3">Digital Marketing Services Toronto</div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-section mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 d-sm-block d-md-none mb-3">
+                <div class="img-responsive"><img src="{% static 'images/illustrations/undraw_Location_search_re_ttoj.svg' %}"
+                                                 alt="Contact Map" class="img-fluid"></div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-4 col-sm-12 d-flex align-items-center">
+                <div class="contact-form w-100">
+                    <h1 class="text-primary title">GET A FREE SITE AUDIT</h1>
+                    <p class="">Let Us Help You Grow Your Business</p>
+                    <form>
+                        <div class="mb-3">
+                            <input placeholder="Email address" type="email" class="form-control"
+                                   id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <input placeholder="Name" type="text" class="form-control" id="name">
+                        </div>
+                        <div class="mb-3">
+                            <input placeholder="Phone" type="text" class="form-control" id="Phone">
+                        </div>
+                        <div class="mb-3">
+                            <input placeholder="Website URL" type="text" class="form-control" id="Website URL">
+                        </div>
+                        <button type="submit" class="float-end btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-4 d-sm-none d-none d-md-flex d-flex align-items-center">
+                <div class="img-responsive"><img src="{% static 'images/illustrations/undraw_Location_search_re_ttoj.svg' %}"
+                                                 alt="Contact Map" class="img-fluid"></div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+</section>
+
+<section class="footer bg-dark-primary p-5 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h3 class="text-primary">Services</h3>
+                <hr>
+                <ul class="list-unstyled">
+                    <li>
+                        <a class="text-capitalize" href="{% url 'web_development' %}">Web design and development</a>
+                    </li>
+                    <li>
+                        <a class="text-capitalize" href="{% url 'web_development' %}">Logo and graphic design</a>
+                    </li>
+                    <li>
+                        <a class="text-capitalize" href="{% url 'seo' %}">Search Engine Optimization</a>
+                    </li>
+                    <li>
+                        <a class="text-capitalize" href="{% url 'social_media' %}">Social Media Marketing</a>
+                    </li>
+                    <li>
+                        <a class="text-capitalize" href="{% url 'seo' %}">Organic & paid marketing campaigns</a>
+                    </li>
+                    <li>
+                        <a class="text-capitalize" href="{% url 'app_development' %}">Mobile app development</a>
+                    </li>
+                    <li>
+                        <a class="text-capitalize" href="{% url 'social_media' %}">Digital marketing</a>
+                    </li>
+                    <li>
+                        <a class="text-capitalize" href="{% url 'seo' %}">Local SEO</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h3 class="text-primary">Pages</h3>
+                <hr>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'about' %}">About</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'seo' %}">Seo</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'social_media' %}">Social Media</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'web_development' %}">Web Development</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'app_development' %}">App Development</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'contact' %}">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h3 class="text-primary">Social Media</h3>
+                <hr>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#"><i class="fab fa-facebook me-2"></i>Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-twitter me-2"></i>Twitter</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-instagram-square me-2"></i>Instagram</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-linkedin me-2"></i>LinkedIn</a>
+                    </li>
+                </ul>
+                <h3 class="text-primary">Legal</h3>
+                <hr>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="{% url 'privacy' %}">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'term' %}">Terms & Condition</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h3 class="text-primary">Contact Info</h3>
+                <hr>
+                <ul class="list-unstyled">
+                    <li>
+                        <p><i class="fas fa-building me-2"></i>34 Ansbury Drive, <br>Brampton ON, L7A 3S9 <br> Canada
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-headset me-2"></i>+1(647) 990-2414</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="small-details-section bg-primary">
+    <div class="container text-center text-light p-5">
+        <h3 style="text-align: center;">SEO TORONTO</h3>
+        <p style="text-align: center;"><strong>Proudly Serving The GTA & Ontario</strong></p>
+        <p style="text-align: center;">Toronto, Mississauga, Burlington, Oakville, Etobicoke, Hamilton, Richmond
+            Hill, Woodbridge, Scarborough, Pickering, Whitby, Thornhill, Brampton, Vaughan, Niagara Falls, Grimsby,
+            Barrie, North York, Oshawa, Kingston, St. Catharines, Markham, Ajax, Clarington, Caledon, Brock,
+            Newmarket, Orangeville, Aurora, Milton, Sudbury and Thunder Bay.</p>
+    </div>
+</section>
+<section class="final-logo-section">
+    <div class="container text-center p-5">
+        <img src="{% static 'images/logo-transparent.png' %}" class="img-responsive img-fluid" alt=""><br><br>
+        <strong>Copyright © 2022 J. M. Digital Marketing Services + SEO + Social Media + Web Development + App
+            Development</strong>
+    </div>
+</section>

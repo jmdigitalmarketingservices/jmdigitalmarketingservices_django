@@ -1,0 +1,26 @@
+@import url("https://cdn.linearicons.com/free/1.0.0/icon-font.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css");
+@import url("https://fonts.googleapis.com/css?family=Lato:200,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,600,700,900");
+@import "theme_colors";
+@import "colors";
+
+
+$font-family-base: Lato;
+$headings-font-family: Poppins;
+$headings-font-weight: 700;
+
+$spacer: 1rem;
+$border-width: 1px;
+$btn-border-radius: 0;
+
+$dropdown-link-hover-bg: $primary;
+$dropdown-link-hover-color: white;
+$dropdown-border-radius: 0;
+$navbar-light-hover-color: $primary;
+
+
+$top-margin: 77px;
+
+$dropdown-link-color: $gray-700;
+

@@ -1,0 +1,44 @@
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $light;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $primary;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: darken($primary, 10%);
+}
+
+// Utils
+
+.text-dark-secondary {
+  color: $dark-secondary;
+}
+
+.half-screen-height {
+  height: 35vh;
+
+  &-min {
+    min-height: 35vh;
+  }
+
+  &-max {
+    max-height: 35vh;
+  }
+}
+
+.spacial-banner-background {
+  min-height: 30vh;
+  background-position-y: bottom;
+  background-size: calc(100vw + 50px);
+}
