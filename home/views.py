@@ -23,3 +23,7 @@ def not_found_view(request):
 
 def cname_view(request):
     return HttpResponse(content="jmdigitalmarketingservices.ca", content_type="text/plain")
+
+
+def sitemap_view(request):
+    return render(request, "sitemap.xml", content_type="text/xml")
