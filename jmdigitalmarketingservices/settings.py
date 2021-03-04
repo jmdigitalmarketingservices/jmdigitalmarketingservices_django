@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django_distill'
+    'django_distill',
+    'tinymce',
+    'blog',
 ]
 
 MIDDLEWARE = [
@@ -130,3 +132,11 @@ if DEBUG is False:
     STATIC_ROOT = os.path.join(BASE_DIR, "statics")
 
 DISTILL_DIR = os.path.join(BASE_DIR, "docs")
+
+TINYMCE_DEFAULT_CONFIG = {
+    'plugins': ["lists", "advlist", "link", "image", "charmap", "print", "preview", "anchor", "searchreplace",
+                "visualblocks", "code", "fullscreen", "insertdatetime", "media", "table", "paste", "help", "wordcount",
+                ],
+    'toolbar': "formatselect | fontselect | bold italic strikethrough forecolor backcolor formatpainter | alignleft aligncenter alignright alignjustify | numlist bullist outdent indent | link insertfile image media | removeformat | code | addcomment | checklist | casechange",
+    'height': 360
+}

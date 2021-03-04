@@ -1,0 +1,22 @@
+{% load static %}
+<section class="pages-banner spacial-banner-background">
+    <div class="container">
+        <div class="row">
+            <div
+                    class="d-sm-block my-4 d-md-none col-md-5 text-center">
+                <img src="{% static image_url %}" class="img-fluid"
+                     alt="{{ header }}-IMAGE">
+            </div>
+            <div class="col-md-7 d-sm-block d-md-flex flex-column justify-content-center align-items-baseline half-screen-height-min">
+                <h1 class="title">{{ header }}</h1>
+                <h2 class="subtitle">{{ sub_header }}</h2>
+                <a href="{% if action_href %}{{ action_href }}{% else %}#Contact{% endif %}"
+                   class="btn btn-lg btn-primary">{{ action_name }}</a>
+            </div>
+            <div class="d-none col-md-5 d-sm-none d-md-flex half-screen-height-min d-flex flex-column justify-content-center align-items-center">
+                <img src="{% static image_url %}" class="img-fluid"
+                     alt="{{ header }}-IMAGE">
+            </div>
+        </div>
+    </div>
+</section>

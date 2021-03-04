@@ -27,6 +27,9 @@ from app_development import views as app_development
 from contact import views as contact
 from privacy import views as privacy
 from term import views as term
+from blog import views as blog
+
+from blog.models import Blog
 
 
 # STATIC SITE GENERATORS FUNCTIONS
@@ -35,9 +38,12 @@ from django_distill import distill_path
 
 
 def get_index():
-    # The index URI path, '', contains no parameters, named or otherwise.
-    # You can simply just return nothing here.
     return None
+
+
+def get_all_blog():
+    for post in Blog.objects.all():
+        yield {'slug': post.slug}
 
 
 urlpatterns = [
@@ -51,6 +57,8 @@ urlpatterns = [
     distill_path('social-media-marketing/', social_media.view, name="social_media", distill_func=get_index),
     distill_path('web-development/', web_development.view, name="web_development", distill_func=get_index),
     distill_path('app-development/', app_development.view, name="app_development", distill_func=get_index),
+    distill_path('blog/', blog.view, name="blog", distill_func=get_index),
+    distill_path('blog/<slug:slug>/', blog.details, name="blog_details", distill_func=get_all_blog),
     distill_path('contact/', contact.view, name="contact", distill_func=get_index),
     distill_path('privacy/', privacy.view, name="privacy", distill_func=get_index),
     distill_path('term/', term.view, name="term", distill_func=get_index),

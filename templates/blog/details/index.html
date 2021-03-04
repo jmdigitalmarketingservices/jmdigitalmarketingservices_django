@@ -1,0 +1,24 @@
+{% extends "BASE.html" %}
+
+{% block styles %}
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <section class="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mt-4 mb-5">
+                    <div class="mb-2 text-muted"><a class="text-decoration-none" href="{% url 'home' %}">Home</a> > <a class="text-decoration-none" href="{% url 'blog' %}">Blog</a>
+                        > Details > <a class="text-decoration-none" href="{{ blog.get_absolute_url }}"><b>{{ blog.slug }}</b></a></div>
+                    <h1 class="text-primary display-2" style="font-family: 'Playfair Display', serif; font-weight: 900">{{ blog.title }}</h1>
+                    <img src="{{ blog.image_url }}" class="img-fluid my-4" alt="{{ blog.slug }}-image">
+                    <h3>{{ blog.sub_title }}</h3>
+                    <p class="text-muted">{{ blog.created }}</p>
+                    {{ blog.body | safe | escape }}
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
