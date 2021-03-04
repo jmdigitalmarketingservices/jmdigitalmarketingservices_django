@@ -52,6 +52,7 @@ urlpatterns = [
     distill_path('', home.not_found_view, name="not_found", distill_func=get_index, distill_file="404.html"),
     distill_path('', home.cname_view, name="cname", distill_func=get_index, distill_file="CNAME"),
     distill_path('', home.sitemap_view, name="sitemap", distill_func=get_index, distill_file="sitemap.xml"),
+    distill_path('success/', home.form_success, name="form_success", distill_func=get_index),
     distill_path('about/', about.view, name="about", distill_func=get_index),
     distill_path('seo/', seo.view, name="seo", distill_func=get_index),
     distill_path('social-media-marketing/', social_media.view, name="social_media", distill_func=get_index),

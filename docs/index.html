@@ -95,22 +95,22 @@
                         990-2414</a></h3>
                 <div class="contact-form w-100">
 
-                    <form class="mt-4" id="ContactForm" name="contact" data-netlify="true">
+                    <form class="mt-4" id="ContactForm" name="contact" data-netlify="true" action="/success/">
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <input id="email" placeholder="Email address" type="email" class="form-control"
-                                       aria-describedby="emailHelp">
+                                       aria-describedby="emailHelp" name="email">
                             </div>
                             <div class="col-md-6 mb-3">
-                                <input placeholder="Name" id="name" type="text" class="form-control">
+                                <input placeholder="Name" id="name" type="text" class="form-control" name="name">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6 mb-3">
-                                <input placeholder="Phone" id="phone" type="text" class="form-control">
+                                <input placeholder="Phone" id="phone" type="text" class="form-control" name="phone">
                             </div>
                             <div class="col-md-6 mb-3">
-                                <input placeholder="Website URL" id="website" type="text" class="form-control">
+                                <input placeholder="Website URL" id="website" type="text" class="form-control" name="website">
                             </div>
                         </div>
                         <button id="submitButton" type="submit" class="btn btn-primary">Submit</button>
@@ -342,19 +342,19 @@
                     <div class="contact-form w-100">
                         <h1 class="text-primary title">GET A FREE SITE AUDIT</h1>
                         <p class="">Let Us Help You Grow Your Business</p>
-                        <form id="ContactForm" name="contact" method="POST" data-netlify="true">
+                        <form id="ContactForm" name="contact" method="POST" data-netlify="true" action="/success">
     <div class="mb-3">
         <input placeholder="Email address" type="email" class="form-control"
-               id="email" aria-describedby="emailHelp">
+               id="email" aria-describedby="emailHelp" name="email">
     </div>
     <div class="mb-3">
-        <input placeholder="Name" type="text" class="form-control" id="name">
+        <input placeholder="Name" type="text" class="form-control" id="name" name="name">
     </div>
     <div class="mb-3">
-        <input placeholder="Phone" type="text" class="form-control" id="phone">
+        <input placeholder="Phone" type="text" class="form-control" id="phone" name="phone">
     </div>
     <div class="mb-3">
-        <input placeholder="Website URL" type="text" class="form-control" id="website">
+        <input placeholder="Website URL" type="text" class="form-control" id="website" name="website">
     </div>
     <label class="form-check-label mb-3" for="flexCheckDefault">
         When you click submit it is understood that you have accepted our <a
