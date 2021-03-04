@@ -1,10 +1,10 @@
 {% extends "BASE.html" %}
 {% block content %}
-<section class="blog-list-section">
+<section class="blog-list-section pt-4">
     <div class="container">
         <div class="row">
             {% for blog in blogs %}
-                <div class="col col-md-8 my-4">
+                <div class="col col-md-8 mb-4">
                     <div class="row">
                         <div class="col-md-4 img-responsive">
                             <img src="{{ blog.image_url }}" class="img-fluid mb-2" alt="{{ blog.slug }}-image">
