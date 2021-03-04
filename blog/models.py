@@ -7,10 +7,10 @@ from tinymce.models import HTMLField
 
 
 class Blog(models.Model):
-    title = models.CharField(max_length=255)
+    title = models.CharField(max_length=255, unique=True)
     sub_title = models.CharField(max_length=255)
     image_url = models.URLField()
-    body = HTMLField()
+    body = HTMLField(unique=True)
     slug = models.SlugField(blank=True, null=True)
 
     created = models.DateTimeField(auto_now_add=True)
