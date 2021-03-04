@@ -203,27 +203,27 @@
                     <div class="contact-form w-100">
                         <h1 class="text-primary title">GET A FREE SITE AUDIT</h1>
                         <p class="">Let Us Help You Grow Your Business</p>
-                        <form id="ContactForm">
-                            <div class="mb-3">
-                                <input placeholder="Email address" type="email" class="form-control"
-                                       id="email" aria-describedby="emailHelp">
-                            </div>
-                            <div class="mb-3">
-                                <input placeholder="Name" type="text" class="form-control" id="name">
-                            </div>
-                            <div class="mb-3">
-                                <input placeholder="Phone" type="text" class="form-control" id="phone">
-                            </div>
-                            <div class="mb-3">
-                                <input placeholder="Website URL" type="text" class="form-control" id="website">
-                            </div>
-                            <label class="form-check-label mb-3" for="flexCheckDefault">
-                                When you click submit it is understood that you have accepted our <a
-                                    href="/privacy/">Privacy Policy</a> and <a href="/term/">Terms
-                                & Condition</a>
-                            </label>
-                            <button id="submitButton" class="float-end btn btn-primary">Submit</button>
-                        </form>
+                        <form id="ContactForm" name="contact" method="POST" data-netlify="true">
+    <div class="mb-3">
+        <input placeholder="Email address" type="email" class="form-control"
+               id="email" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+        <input placeholder="Name" type="text" class="form-control" id="name">
+    </div>
+    <div class="mb-3">
+        <input placeholder="Phone" type="text" class="form-control" id="phone">
+    </div>
+    <div class="mb-3">
+        <input placeholder="Website URL" type="text" class="form-control" id="website">
+    </div>
+    <label class="form-check-label mb-3" for="flexCheckDefault">
+        When you click submit it is understood that you have accepted our <a
+            href="/privacy/">Privacy Policy</a> and <a href="/term/">Terms
+        & Condition</a>
+    </label>
+    <button id="submitButton" type="submit" class="float-end btn btn-primary">Submit</button>
+</form>
                     </div>
                 </div>
                 <div class="col-md-1"></div>
