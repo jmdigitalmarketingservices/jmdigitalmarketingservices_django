@@ -14,26 +14,26 @@
                     <div class="contact-form w-100">
                         <h1 class="text-primary ">CONTACT US</h1>
                         <p class="">We are happy to respond to any queries you may have</p>
-                        <form>
+                        <form id="ContactForm">
                             <div class="mb-3">
                                 <input placeholder="Email address" type="email" class="form-control"
-                                       id="exampleInputEmail1" aria-describedby="emailHelp">
+                                       id="email" aria-describedby="emailHelp">
                             </div>
                             <div class="mb-3">
                                 <input placeholder="Name" type="text" class="form-control" id="name">
                             </div>
                             <div class="mb-3">
-                                <input placeholder="Phone" type="text" class="form-control" id="Phone">
+                                <input placeholder="Phone" type="text" class="form-control" id="phone">
                             </div>
                             <div class="mb-3">
-                                <input placeholder="Website URL" type="text" class="form-control" id="Website URL">
+                                <input placeholder="Website URL" type="text" class="form-control" id="website">
                             </div>
                             <label class="form-check-label mb-3" for="flexCheckDefault">
                                 When you click submit it is understood that you have accepted our <a
                                     href="{% url 'privacy' %}">Privacy Policy</a> and <a href="{% url 'term' %}">Terms
                                 & Condition</a>
                             </label>
-                            <button type="submit" class="float-end btn btn-primary">Submit</button>
+                            <button id="submitButton" class="float-end btn btn-primary">Submit</button>
                         </form>
                     </div>
                 </div>
