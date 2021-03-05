@@ -621,7 +621,7 @@ hr {
 
 @media (max-width: 1400px) {
   .margin-top {
-    margin-top: $top-margin + 55px;
+    margin-top: $top-margin + 40px;
   }
   .navbar-collapse {
     position: absolute;
@@ -631,6 +631,7 @@ hr {
     padding-right: 15px;
     padding-bottom: 15px;
     width: 100%;
+    margin-top: 12px;
     background-color: $light;
   }
 }
@@ -681,6 +682,7 @@ hr {
     height: 100vh;
     width: auto;
     top: $top-margin;
+    margin-top: 0;
     left: 0;
     padding-left: 15px;
     padding-right: 15px;
