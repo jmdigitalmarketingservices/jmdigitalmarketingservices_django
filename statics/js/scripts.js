@@ -5,49 +5,75 @@ $(window).scroll(function () {
     })
 });
 
-// $("#submitButton").on("click", function () {
-//     const name = $("#name").val();
-//     const email = $("#email").val();
-//     const phone = $("#phone").val();
-//     const website = $("#website").val();
-//     const username = "57c0ef882a9d275b73efd242f60b2458";
-//     const password = "6b452c1d00684460267e8c4e0e0c16a5"
-//     if (name === '' || email === '' || phone === '') {
-//         alert("Please Fill Required Fields");
-//     } else {
-//         $.ajax({
-//             type: "POST",
-//             url: "https://api.mailjet.com/v3.1/send",
-//             dataType: "json",
-//             headers: {
-//                 "Authorization": "Basic " + btoa(username + ":" + password),
-//                 "Content-Type": "application/json"
-//             },
-//             data: JSON.stringify({
-//                 "Messages": [
-//                     {
-//                         "From": {
-//                             "Email": "visitor@jmdigitalmarketingservices.com",
-//                             "Name": "Website Visitor"
-//                         },
-//                         "To": [
-//                             {
-//                                 "Email": "support@jmdigitalmarketingservices.com",
-//                                 "Name": "Support"
-//                             }
-//                         ],
-//                         "Subject": "Visitor",
-//                         "TextPart": "Email: " + email + ", Name: " + name + ", Phone: " + phone + ", website: " + website,
-//                         "HTMLPart": "Email: " + email + ", Name: " + name + ", Phone: " + phone + ", website: " + website
-//                     }
-//                 ],
-//                 "SandboxMode": true
-//             }),
-//             success: function () {
-//                 $("#form")[0].reset();
-//                 alert('Thanks for your response!');
-//             }
-//         });
-//     }
-// });
+$("#ContactForm").on("submit", function (event) {
+    event.preventDefault();
+    const name = $("#name").val();
+    const email = $("#email").val();
+    const phone = $("#phone").val();
+    const website = $("#website").val();
+    const username = "e039e3ebb13a45f7b0c5964d23ccab1d";
+    const password = "c12da6bcdc4ca15442eeec53513215e5"
+    if (name === '' || email === '' || phone === '') {
+        alert("Please Fill Required Fields");
+    } else {
+        $.ajax({
+            type: "POST",
+            url: "http://jmdigitalmarketingservices.herokuapp.com/api/email/send/",
+            dataType: "json",
+            headers: {
+                "Authorization": "Basic " + btoa(username + ":" + password),
+                "Content-Type": "application/json"
+            },
+            data: JSON.stringify({
+                "from_email": "visitor@jmdigitalmarketingservices.com",
+                "from_name": "Website Visitor",
+                "to_email": "jackmel@hotmail.com",
+                "to_name": "Melwyn D'Silva",
+                "subject": "New Site Visitor",
+                "text_body": "Email: " + email + ", Name: " + name + ", Phone: " + phone + ", website: " + website,
+                "html_body": "<p>Email: " + email + ", Name: " + name + ", Phone: " + phone + ", website: " + website + "</p>",
+            }),
+            success: function () {
+                $("#ContactForm")[0].reset();
+                alert('Thanks for your response!');
+            }
+        });
+    }
+});
+
+$("#ContactFormFooter").on("submit", function (event) {
+    event.preventDefault();
+    const name = $("#nameFooter").val();
+    const email = $("#emailFooter").val();
+    const phone = $("#phoneFooter").val();
+    const website = $("#websiteFooter").val();
+    const username = "e039e3ebb13a45f7b0c5964d23ccab1d";
+    const password = "c12da6bcdc4ca15442eeec53513215e5"
+    if (name === '' || email === '' || phone === '') {
+        alert("Please Fill Required Fields");
+    } else {
+        $.ajax({
+            type: "POST",
+            url: "http://jmdigitalmarketingservices.herokuapp.com/api/email/send/",
+            dataType: "json",
+            headers: {
+                "Authorization": "Basic " + btoa(username + ":" + password),
+                "Content-Type": "application/json"
+            },
+            data: JSON.stringify({
+                "from_email": "visitor@jmdigitalmarketingservices.com",
+                "from_name": "Website Visitor",
+                "to_email": "jackmel@hotmail.com",
+                "to_name": "Melwyn D'Silva",
+                "subject": "New Site Visitor",
+                "text_body": "Email: " + email + ", Name: " + name + ", Phone: " + phone + ", website: " + website,
+                "html_body": "<p>Email: " + email + ", Name: " + name + ", Phone: " + phone + ", website: " + website + "</p>",
+            }),
+            success: function () {
+                $("#ContactFormFooter")[0].reset();
+                alert('Thanks for your response!');
+            }
+        });
+    }
+});
 

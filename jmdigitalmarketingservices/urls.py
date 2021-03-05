@@ -23,6 +23,7 @@ from about import views as about
 from seo import views as seo
 from social_media import views as social_media
 from web_development import views as web_development
+from graphic_design import views as graphic_design
 from app_development import views as app_development
 from contact import views as contact
 from privacy import views as privacy
@@ -52,11 +53,13 @@ urlpatterns = [
     distill_path('', home.not_found_view, name="not_found", distill_func=get_index, distill_file="404.html"),
     distill_path('', home.cname_view, name="cname", distill_func=get_index, distill_file="CNAME"),
     distill_path('', home.sitemap_view, name="sitemap", distill_func=get_index, distill_file="sitemap.xml"),
+    distill_path('', home.sitemap_view, name="sitemap", distill_func=get_index, distill_file="robots.txt"),
     distill_path('success/', home.form_success, name="form_success", distill_func=get_index),
     distill_path('about/', about.view, name="about", distill_func=get_index),
     distill_path('seo/', seo.view, name="seo", distill_func=get_index),
     distill_path('social-media-marketing/', social_media.view, name="social_media", distill_func=get_index),
     distill_path('web-development/', web_development.view, name="web_development", distill_func=get_index),
+    distill_path('graphic-design/', graphic_design.view, name="graphic_design", distill_func=get_index),
     distill_path('app-development/', app_development.view, name="app_development", distill_func=get_index),
     distill_path('blog/', blog.view, name="blog", distill_func=get_index),
     distill_path('blog/<slug:slug>/', blog.details, name="blog_details", distill_func=get_all_blog),

@@ -1,0 +1,3 @@
+Sitemap: https://jmdigitalmarketingservices.ca/sitemap.xml
+User-agent: *
+Disallow:
