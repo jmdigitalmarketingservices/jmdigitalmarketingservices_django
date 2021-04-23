@@ -149,4 +149,4 @@ META_USE_TWITTER_PROPERTIES = True
 META_USE_OG_PROPERTIES = True
 META_USE_SITES = True
 
-META_IMAGE_URL = 'images/SEO_Title_Image.jpg'
+META_IMAGE_URL = STATIC_URL + 'images/SEO_Title_Image.jpg'
