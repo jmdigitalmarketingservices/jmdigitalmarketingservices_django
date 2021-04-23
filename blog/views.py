@@ -1,6 +1,8 @@
-from django.shortcuts import render
-from blog.models import Blog
 from django.shortcuts import get_object_or_404
+from django.shortcuts import render
+
+from blog.models import Blog
+
 
 # Create your views here.
 

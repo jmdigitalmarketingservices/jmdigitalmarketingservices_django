@@ -16,7 +16,6 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
@@ -24,10 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'vw^_af0xco9kez1gtf=47#(hq#r1a^(z_+2n)c8vccgi9$q0&7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG', True) if os.environ.get('DEBUG', True) == True else False
+DEBUG = os.environ.get('DEBUG', True) if os.environ.get('DEBUG', True) is True else False
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -38,10 +36,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
     'django_distill',
     'tinymce',
     'blog',
+    'meta'
 ]
+
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -58,7 +60,7 @@ ROOT_URLCONF = 'jmdigitalmarketingservices.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
+        'DIRS': [os.path.join(BASE_DIR, 'templates/')]
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -74,7 +76,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'jmdigitalmarketingservices.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
@@ -84,7 +85,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
@@ -104,7 +104,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
@@ -117,7 +116,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
@@ -140,3 +138,15 @@ TINYMCE_DEFAULT_CONFIG = {
     'toolbar': "formatselect | fontselect | bold italic strikethrough forecolor backcolor formatpainter | alignleft aligncenter alignright alignjustify | numlist bullist outdent indent | link insertfile image media | removeformat | code | addcomment | checklist | casechange",
     'height': 360
 }
+
+META_SITE_PROTOCOL = 'https'
+META_SITE_DOMAIN = 'jmdigitalmarketingservices.ca'
+META_SITE_NAME = 'JM Digital Marketing Services'
+
+META_USE_TITLE_TAG = True
+META_USE_SCHEMAORG_PROPERTIES = True
+META_USE_TWITTER_PROPERTIES = True
+META_USE_OG_PROPERTIES = True
+META_USE_SITES = True
+
+META_IMAGE_URL = 'images/SEO_Title_Image.jpg'

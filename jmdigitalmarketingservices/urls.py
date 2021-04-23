@@ -15,27 +15,24 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django_distill import distill_path
 
-# VIEWS
-
-from home import views as home
 from about import views as about
+from app_development import views as app_development
+from blog import views as blog
+from blog.models import Blog
+from contact import views as contact
+from graphic_design import views as graphic_design
+from home import views as home
+from privacy import views as privacy
 from seo import views as seo
 from social_media import views as social_media
-from web_development import views as web_development
-from graphic_design import views as graphic_design
-from app_development import views as app_development
-from contact import views as contact
-from privacy import views as privacy
 from term import views as term
-from blog import views as blog
-
-from blog.models import Blog
+from web_development import views as web_development
 
 
+# VIEWS
 # STATIC SITE GENERATORS FUNCTIONS
-
-from django_distill import distill_path
 
 
 def get_index():
