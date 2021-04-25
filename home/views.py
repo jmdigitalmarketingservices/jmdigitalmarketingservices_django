@@ -45,7 +45,7 @@ def view(request):
         image_height=1230,
         image_width=630,
         object_type='Website Home',
-        description='JM Digital Marketing Services is a Toronto based full-fledged digital marketing services agency. Our experts in the field of SEO and Social Media Marketing can help your website rank on Google, Bing & Yahoo. Call +1(877) 861-5464 for a FREE Website Audit Today!',
+        description='JM Digital Marketing Services is a Toronto based digital marketing services agency. Our experts in the field of SEO and Social Media Marketing can help your website rank on Google, Bing & Yahoo. Call +1(877) 861-5464 for a FREE Website Audit Today!',
         site_name='JM Digital Marketing Services',
         # keywords=[
         #     'seo toronto', 'social media marketing', 'toronto web design',
