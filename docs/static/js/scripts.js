@@ -1,3 +1,4 @@
+
 $(window).scroll(function () {
     const scroll = $(window).scrollTop();
     $('.banner-section').css({
