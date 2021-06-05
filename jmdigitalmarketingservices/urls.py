@@ -40,7 +40,7 @@ def get_index():
 
 
 def get_all_blog():
-    for post in Blog.objects.all():
+    for post in Blog.objects.filter(is_active=True):
         yield {'slug': post.slug}
 
 
@@ -59,8 +59,8 @@ urlpatterns = [
     distill_path('graphic-design/', graphic_design.view, name="graphic_design", distill_func=get_index),
     distill_path('app-development/', app_development.view, name="app_development", distill_func=get_index),
     distill_path('blog/', blog.view, name="blog", distill_func=get_index),
-    distill_path('blog/<slug:slug>/', blog.details, name="blog_details", distill_func=get_all_blog),
     distill_path('contact/', contact.view, name="contact", distill_func=get_index),
     distill_path('privacy/', privacy.view, name="privacy", distill_func=get_index),
     distill_path('term/', term.view, name="term", distill_func=get_index),
+    distill_path('<slug:slug>/', blog.details, name="blog_details", distill_func=get_all_blog),
 ]

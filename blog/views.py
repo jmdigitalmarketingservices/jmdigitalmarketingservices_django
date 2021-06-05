@@ -52,7 +52,7 @@ def view(request):
 
 
 def details(request, slug):
-    queryset = Blog.objects.all()
+    queryset = Blog.objects.filter(is_active=True)
     blog = get_object_or_404(queryset, slug=slug)
     context = {
         'blog': blog,
