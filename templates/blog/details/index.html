@@ -12,7 +12,7 @@
                 <div class="col-md-8 mt-4 mb-5">
                     <div class="mb-2 text-muted"><a class="text-decoration-none text-dark-secondary" href="{% url 'home' %}">Home</a> > <a class="text-decoration-none text-dark-secondary" href="{% url 'blog' %}">Blog</a>
                         > <a class="text-decoration-none text-dark-secondary" href="{{ blog.get_absolute_url }}"><b>{{ blog.slug }}</b></a></div>
-                    <h1 class="text-primary display-2" style="font-family: 'Playfair Display', serif; font-weight: 900">{{ blog.title }}</h1>
+                    <h1 class="text-primary display-2 py-3" style="font-family: 'Playfair Display', serif; font-weight: 900; line-height: 4.5rem">{{ blog.title }}</h1>
                     {% if blog.quote %}<p class="small text-muted text-justify"><i><b>{{ blog.quote }}</b></i></p>{% endif %}
                     <img src="{{ blog.image_url }}" class="img-fluid mb-4" alt="{{ blog.slug }}-image">
                     {% if blog.sub_title %}<h2>{{ blog.sub_title }}</h2>{% endif %}

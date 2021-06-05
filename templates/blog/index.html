@@ -10,8 +10,14 @@
                             <img src="{{ blog.image_url }}" class="img-fluid mb-2" alt="{{ blog.slug }}-image">
                         </div>
                         <div class="col-md-8 d-flex justify-content-between flex-column">
-                            <p style="font-weight: 700; font-size: 1.8rem; font-family: Poppins, sans-serif; line-height: 1"><a href="{{ blog.get_absolute_url }}" class="text-decoration-none">{{ blog.title }}</a></p>
-                            <p class="mb-0">{{ blog.sub_title }}</p>
+                            <h2 style="font-weight: 700; font-size: 1.8rem; font-family: Poppins, sans-serif; line-height: 1"><a href="{{ blog.get_absolute_url }}" class="text-decoration-none">{{ blog.title }}</a></h2>
+                            <p class="mb-0">
+                                {% if blog.sub_title %}
+                                {{ blog.sub_title | truncatewords:30 }}
+                                {% elif blog.quote %}
+                                {{ blog.quote | truncatewords:30 }}
+                                {% endif %}
+                            </p>
                             <p class="text-muted mb-0">{{ blog.created }}</p>
                         </div>
                     </div>
