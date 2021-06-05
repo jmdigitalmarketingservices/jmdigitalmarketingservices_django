@@ -1,85 +1,80 @@
 {% load static %}
 {% load meta %}
-<head>
-    <meta charset="UTF-8"/>
-    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0" name="viewport"/>
-    {#    <title>{{ title }}</title>#}
-    {#    <meta name="description" content="{{ meta_description }}" />#}
-    {{ extra_meta | safe | escape }}
-    {% include "IMPORTS.html" %}
-    {% include "STYLES.html" %}
-    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon.png' %}"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com"/>
-    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:200,300,400,700&display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,600,700,900&display=swap"/>
 
-    {% block styles %}
+<meta charset="UTF-8"/>
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0" name="viewport"/>
+{#    <title>{{ title }}</title>#}
+{#    <meta name="description" content="{{ meta_description }}" />#}
+{{ extra_meta | safe | escape }}
+{% include "IMPORTS.html" %}
+{% include "STYLES.html" %}
+<link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon.png' %}"/>
+<link rel="preconnect" href="https://fonts.gstatic.com"/>
+<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:200,300,400,700&display=swap"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,600,700,900&display=swap"/>
 
-    {% endblock %}
+{% include "meta/meta.html" %}
 
-    {% include "meta/meta.html" %}
+<!-- Global site tag (gtag.js) - Google Analytics -->
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H5QN8ZFMM8"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H5QN8ZFMM8"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+    gtag('js', new Date());
 
-        gtag('js', new Date());
+    gtag('config', 'G-H5QN8ZFMM8');
+</script>
 
-        gtag('config', 'G-H5QN8ZFMM8');
-    </script>
-
-    <!-- End of Global site tag (gtag.js) - Google Analytics -->
+<!-- End of Global site tag (gtag.js) - Google Analytics -->
 
 
-    <!-- Facebook Pixel Code -->
+<!-- Facebook Pixel Code -->
 
-    <script>
+<script>
 
-        !function (f, b, e, v, n, t, s) {
-            if (f.fbq) return;
-            n = f.fbq = function () {
-                n.callMethod ?
+    !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+            n.callMethod ?
 
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
 
-            if (!f._fbq) f._fbq = n;
-            n.push = n;
-            n.loaded = !0;
-            n.version = '2.0';
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
 
-            n.queue = [];
-            t = b.createElement(e);
-            t.async = !0;
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
 
-            t.src = v;
-            s = b.getElementsByTagName(e)[0];
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
 
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
+        s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
 
-            'https://connect.facebook.net/en_US/fbevents.js');
+        'https://connect.facebook.net/en_US/fbevents.js');
 
-        fbq('init', '289611759406459');
+    fbq('init', '289611759406459');
 
-        fbq('track', 'PageView');
+    fbq('track', 'PageView');
 
-    </script>
+</script>
 
-    <noscript><img height="1" width="1" style="display:none"
+<noscript><img height="1" width="1" style="display:none"
 
-                   src=https://www.facebook.com/tr?id=289611759406459&ev=PageView&noscript=1
+               src=https://www.facebook.com/tr?id=289611759406459&ev=PageView&noscript=1
 
-    /></noscript>
+/></noscript>
 
-    <!-- End Facebook Pixel Code -->
+<!-- End Facebook Pixel Code -->
 
-</head>
