@@ -7,10 +7,10 @@ from meta.views import Meta
 
 def view(request):
     meta = Meta(
-        title="SEO Social Media Web & App Development | J. M. Digital",
-        og_title='SEO Social Media Web & App Development | J. M. Digital',
-        twitter_title='SEO Social Media Web & App Development | J. M. Digital',
-        schemaorg_title='SEO Social Media Web & App Development | J. M. Digital',
+        title="SEO Toronto Company | J. M. Digital Marketing Services Agency",
+        og_title='SEO Toronto Company | J. M. Digital Marketing Services Agency',
+        twitter_title='SEO Toronto Company | J. M. Digital Marketing Services Agency',
+        schemaorg_title='SEO Toronto Company | J. M. Digital Marketing Services Agency',
         image='',
         image_object={
             'url': '',
@@ -22,16 +22,9 @@ def view(request):
         },
         image_height=1230,
         image_width=630,
-        object_type='SEO with J. M. Digital Marketing Services',
-        description='J. M. Digital Marketing Services helps you increase traffic using organic & paid strategies on '
-                    'social media networks. Free Site Audit Call +1(877) 861-5464',
+        object_type='SEO Toronto Company | J. M. Digital Marketing Services Agency',
+        description='GROW YOUR TRAFFIC, LEADS & REVENUE with our SEO Toronto Company. Get A FREE Site Audit Today.',
         site_name='JM Digital Marketing Services',
-        # keywords=[
-        #     'seo toronto', 'social media marketing', 'toronto web design',
-        #     'digital marketing agency toronto', 'app developers toronto',
-        #     'local seo company', 'seo company near me', 'shopify expert toronto',
-        #     'social media marketing agency', 'toronto web development'
-        # ],
         extra_custom_props=[
             ('http-equiv', 'Content-Type', 'text/html; charset=UTF-8'),
         ]
