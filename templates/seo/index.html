@@ -2,20 +2,64 @@
 {% load static %}
 
 {% block content %}
-    <section class="pages-banner spacial-banner-background">
+    {#    <section class="pages-banner spacial-banner-background">#}
+    {#        <div class="container">#}
+    {#            <div class="row">#}
+    {#                <div#}
+    {#                        class="d-sm-block my-4 d-md-none col-md-5">#}
+    {#                    <img src="{% static 'images/illustrations/undraw_create_f05x.svg' %}" class="img-fluid" alt="SeoImage">#}
+    {#                </div>#}
+    {#                <div class="col-md-7 d-sm-block d-md-flex flex-column justify-content-center align-items-baseline half-screen-height-min">#}
+    {#                    <h1 class="title"><span>S</span>EARCH <span>E</span>NGINE <span>O</span>PTIMIZATION</h1>#}
+    {#                    <h2 class="subtitle">IMPROVE YOUR SEARCH ENGINE RANKING</h2>#}
+    {#                    <a href="#redBar" class="btn btn-lg btn-primary">START NOW</a>#}
+    {#                </div>#}
+    {#                <div class="d-none col-md-5 d-sm-none d-md-flex half-screen-height-min d-flex flex-column justify-content-center align-items-center">#}
+    {#                    <img src="{% static 'images/illustrations/undraw_create_f05x.svg' %}" class="img-fluid" alt="SeoImage">#}
+    {#                </div>#}
+    {#            </div>#}
+    {#        </div>#}
+    {#    </section>#}
+    <section class="banner-section bg-dark-primary">
         <div class="container">
-            <div class="row">
-                <div
-                        class="d-sm-block my-4 d-md-none col-md-5">
-                    <img src="{% static 'images/illustrations/undraw_create_f05x.svg' %}" class="img-fluid" alt="SeoImage">
+            <div class="row banner">
+                <div class="col-md-6 my-md-5 my-sm-2 d-flex justify-content-center flex-column">
+                    <div class="banner-header-main">
+                        <h1 class="title">
+                            SEO <span>TORONTO</span> COMPANY THAT <span>GROWS</span> YOUR BUSINESS
+                        </h1>
+                    </div>
                 </div>
-                <div class="col-md-7 d-sm-block d-md-flex flex-column justify-content-center align-items-baseline half-screen-height-min">
-                    <h1 class="title"><span>S</span>EARCH <span>E</span>NGINE <span>O</span>PTIMIZATION</h1>
-                    <h2 class="subtitle">IMPROVE YOUR SEARCH ENGINE RANKING</h2>
-                    <a href="#redBar" class="btn btn-lg btn-primary">START NOW</a>
-                </div>
-                <div class="d-none col-md-5 d-sm-none d-md-flex half-screen-height-min d-flex flex-column justify-content-center align-items-center">
-                    <img src="{% static 'images/illustrations/undraw_create_f05x.svg' %}" class="img-fluid" alt="SeoImage">
+                <div class="col-md-6 my-md-5 mb-sm-2 d-flex justify-content-center align-items-end flex-column">
+
+                    <h3 class="text-center bg-secondary p-2 rounded-3 banner-phone-number mt-5"><i
+                            class="fas text-primary fa-phone-alt me-2"></i> CALL NOW <a class="text-decoration-none"
+                                                                                        href="tel:+1 (877) 861-5464">+1
+                        (877) 861-5464</a></h3>
+                    <div class="contact-form w-100">
+
+                        <form class="mt-4" id="ContactForm" method="post">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input id="email" placeholder="Email address" type="email" class="form-control"
+                                           aria-describedby="emailHelp" name="email">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input placeholder="Name" id="name" type="text" class="form-control" name="name">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input placeholder="Phone" id="phone" type="text" class="form-control" name="phone">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input placeholder="Website URL" id="website" type="text" class="form-control"
+                                           name="website">
+                                </div>
+                            </div>
+                            <input id="submitButton" type="submit" class="btn btn-primary" value="Submit">
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -25,11 +69,11 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="pages-bottom-banner-belt">
-                        <h1 class="text">
+                        <h3 class="text">
                             Increase your website visitor rate,
                             thereby generating high-quality leads per month, with the intention to push them to the
                             bottom of the funnel so they become, a sales-qualified lead.
-                        </h1>
+                        </h3>
                     </div>
                 </div>
             </div>
@@ -45,13 +89,13 @@
                 </div>
                 <div class="col-md-9 d-flex justify-content-center flex-column align-items-baseline">
                     <h3>SEO TORONTO (SEARCH ENGINE OPTIMIZATION)</h3>
-                    <p>Our process starts with understanding your current environment and then determining where you
-                        want to be. We perform an in-depth SEO audit and provide specific recommendations to improve
-                        your rankings. We then propose a plan that is customised for your website towards achieving your
-                        business goals. The first thing we do when auditing your website for SEO is to start collecting
-                        data associated with your site to learn where you currently rank. We’ll review your Google
-                        Analytics, traffic patterns and consult Google Webmaster Tools free diagnostic tools. We then
-                        run a complete analysis of your website.</p>
+                    <p>Finding the right SEO Toronto Company that can truly help you achieve your business goals and
+                        guarantee results is a challenge. With the number of companies mushrooming and all claiming to
+                        be experts, separating the wheat from the chaff can only be done by clearly understanding what
+                        it takes to be a top-notch SEO Company offering services in Toronto. The very first step
+                        included in our Free Consultation will give you a powerful insight into the major metrics that
+                        need to be optimized on your website, with top recommendations from our SEO experts on how to
+                        enhance your rankings and increase traffic.</p>
                     <a href="#redBar" class="btn btn-primary btn-lg">GET A FREE SITE AUDIT</a>
                 </div>
             </div>
@@ -62,7 +106,8 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="img-resposive">
-                        <img src="{% static 'images/illustrations/competition.svg' %}" class="img-fluid" alt="COMPETITORS">
+                        <img src="{% static 'images/illustrations/competition.svg' %}" class="img-fluid"
+                             alt="COMPETITORS">
                     </div>
 
                     <h3>COMPETITOR <br>
@@ -94,7 +139,8 @@
                 </div>
                 <div class="col-md-4">
                     <div class="img-responsive">
-                        <img src="{% static 'images/illustrations/worldwide.svg' %}" class="img-fluid" alt="GEO-LOCATION">
+                        <img src="{% static 'images/illustrations/worldwide.svg' %}" class="img-fluid"
+                             alt="GEO-LOCATION">
                     </div>
 
                     <h3>LOCAL <br>
@@ -109,6 +155,85 @@
                         impression you make with potential customers.</p>
                 </div>
             </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mb-5">
+            <figure>
+                <img loading="lazy"
+                     src="https://images.pexels.com/photos/270637/pexels-photo-270637.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
+                     class="img-fluid mb-4 img-responsive" style="object-fit: cover; height: 300px; width: 100%" alt="seo-toronto-image" width="900" height="500">
+            </figure>
+            <article>
+                <h2 style="text-align: center;"><span style="color: #ce241e;"><strong>Toronto SEO Company: Grow Your Traffic, Increase Your Leads and Enhance Your Revenue</strong></span>
+                </h2>
+                <p><span style="font-weight: 400;">Our Toronto SEO Company and it’s team of digital marketing experts and seo consultants, implement a plethora of tools and strategies in the journey from knowing where you are to getting to where you want to be. As a leading SEO Company, we have worked with hundreds of clients in Toronto, from web design, content creation, technical seo, local seo, seo campaigns, ad campaigns, email marketing, Social Media Marketing, and much much more. Our time-tested seo strategies produce results and our client’s results bear testimony to our expertise and execution. Reach out to us for a FREE SITE AUDIT and we will lay out a plan and seo package, on how you can grow your business, increase your leads and enhance your revenue.&nbsp;</span>
+                </p>
+                <h2><span
+                        style="color: #ce241e;"><strong>Investing in a Top Class SEO Toronto Company is self-paying.</strong></span>
+                </h2>
+                <p><span style="font-weight: 400;">As a top-class SEO Company and marketing agency, based in Toronto, we are confident that we can meet or exceed your SEO expectations. The ultimate goal would be to increase your website visitor rate, thereby generating high-quality leads per month, with the intention to push them to the bottom of the funnel so they become, a sales-qualified lead.&nbsp;</span>
+                </p>
+                <p><span style="font-weight: 400;">How much would a converted lead be worth to you? As they keep dropping through the funnel the revenue generated through our SEO services will give you a positive ROI and we can then scale this even more. By monitoring analytics and user behaviour we are able to create custom audiences, look alike audiences and plan retargeting seo campaigns that will cumulatively increase your traffic and accelerate your lead generation.&nbsp;</span>
+                </p>
+                <p><span style="font-weight: 400;">&nbsp;SEO Toronto is long term process in which we optimize seo, our content writers create relevant content that gives you legitimate backlinks, we report on how the website is faring and also use your feedback to make continuous improvements.</span>
+                </p>
+                <h2><span
+                        style="color: #ce241e;"><strong>Grow your business with SEO Toronto Digital Marketing Services.</strong></span>
+                </h2>
+                <p><span style="font-weight: 400;">Seo Toronto marketing strategy involves account management and monitoring at an extremely high level. We conduct competitor analysis, verify keyword gaps, define keywords that are relevant to your business and also have a high search volume and then track their position SERP.&nbsp;</span>
+                </p>
+                <p><span style="font-weight: 400;">More people are searching and shopping online than every before and only a lazer&nbsp; focussed strategy can drive them to your website or ecommerce store. It does not end there, once a user has landed on your page, it is important to ensure you capture their information through a lead magnet or an irresistible offer. We analyse the bounce rate on your site and tweak your landing page to ensure higher conversion metrics. We achieve this through pixel analytics and google tracking codes.&nbsp;</span>
+                </p>
+                <p><span style="font-weight: 400;">The complete search engine optimization process is broken down into:&nbsp;</span>
+                </p>
+                <p><span style="font-weight: 400;">On page optimization:</span></p>
+                <ul>
+                    <li style="font-weight: 400;" aria-level="1"><span
+                            style="font-weight: 400;">Site loading speed</span>
+                    </li>
+                    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Meta title and descriptions for all pages</span>
+                    </li>
+                    <li style="font-weight: 400;" aria-level="1"><span
+                            style="font-weight: 400;">Schemas, html tags etc.</span></li>
+                    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Keyword denisity</span>
+                    </li>
+                    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Content creation</span>
+                    </li>
+                    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Cross site linking and much much more</span>
+                    </li>
+                </ul>
+                <p><span style="font-weight: 400;">Off page optimization:</span></p>
+                <ul>
+                    <li style="font-weight: 400;" aria-level="1"><span
+                            style="font-weight: 400;">DA, PA and Alexa ranking</span></li>
+                    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Backlink audit</span>
+                    </li>
+                    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Backlink building and link building</span>
+                    </li>
+                    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Keyword research</span>
+                    </li>
+                    <li style="font-weight: 400;" aria-level="1"><span
+                            style="font-weight: 400;">Competitor research</span>
+                    </li>
+                    <li style="font-weight: 400;" aria-level="1"><span
+                            style="font-weight: 400;">Search engine marketing</span></li>
+                    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Social media marketing&nbsp;</span>
+                    </li>
+                    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Email marketing</span>
+                    </li>
+                    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">PPC and ad campaigns and much much more</span>
+                    </li>
+                </ul>
+                <p><span style="font-weight: 400;">All this comes together in a seamless manner with the help of our team of seo consultants and seo experts creating brand awareness for your brand and increasing your business revenue.&nbsp;</span>
+                </p>
+                <h2><span style="color: #ce241e;"><strong>SEO Consultants that are here for you.</strong></span></h2>
+                <p><span style="font-weight: 400;">Our SEO Toronto Company offers economical seo packages that are tailor made to suit you and your budge. Internet marketing is here to stay and having an online presence is of the utmost importance today. However it iis not enough to build it and hope people will show up. As explained gaining website traffic is the result of implementing focussed seo tools and strategies that are designed for this very purpose. We deploy our years of experience in this field to increase your rankings and help grow your business. We establish your brand as an authority on guest blogs, forums, social media platforms, press releases and generate powerful leads that convert in paying customers.</span>
+                </p>
+                <p><span style="font-weight: 400;">Where you are a small business or a large corporation, our seo consultants can help your business soar and maintain your rankingsl.&nbsp;</span>
+                </p>
+                <p><span style="font-weight: 400;">Reach out to us and let us do the heavy lifting.</span></p>
+            </article>
         </div>
     </section>
 {% endblock %}

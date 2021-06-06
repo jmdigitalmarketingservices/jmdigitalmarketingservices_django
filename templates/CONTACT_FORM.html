@@ -1,4 +1,4 @@
-<form id="ContactFormFooter" name="contactfooter">
+<form id="ContactFormFooter" method="post">
     <div class="mb-3">
         <input placeholder="Email address" type="email" class="form-control"
                id="emailFooter" aria-describedby="emailHelp" name="email">
@@ -17,5 +17,5 @@
             href="{% url 'privacy' %}">Privacy Policy</a> and <a href="{% url 'term' %}">Terms
         & Condition</a>
     </label>
-    <button id="submitButtonFooter" class="float-end btn btn-primary">Submit</button>
+    <input type="submit" id="submitButtonFooter" class="float-end btn btn-primary" value="Submit">
 </form>

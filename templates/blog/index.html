@@ -7,7 +7,7 @@
                 <div class="col col-md-8 mb-4">
                     <div class="row">
                         <div class="col-md-4 img-responsive">
-                            <img src="{{ blog.image_url }}" class="img-fluid mb-2" alt="{{ blog.slug }}-image">
+                            <img width="280" height="180" loading="lazy" src="{{ blog.image_url }}" class="img-fluid mb-2" alt="{{ blog.slug }}-image">
                         </div>
                         <div class="col-md-8 d-flex justify-content-between flex-column">
                             <h2 style="font-weight: 700; font-size: 1.8rem; font-family: Poppins, sans-serif; line-height: 1"><a href="{{ blog.get_absolute_url }}" class="text-decoration-none">{{ blog.title }}</a></h2>
