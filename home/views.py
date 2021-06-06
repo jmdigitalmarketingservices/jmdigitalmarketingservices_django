@@ -1,6 +1,9 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from django.urls import reverse
 from meta.views import Meta
+from django.contrib.sitemaps.views import sitemap
+from django.contrib import sitemaps
 
 # Create your views here.
 
@@ -94,6 +97,28 @@ def cname_view(request):
 
 def sitemap_view(request):
     return render(request, "sitemap.xml", content_type="text/xml")
+
+
+class StaticViewSitemap(sitemaps.Sitemap):
+    priority = 0.8
+    changefreq = 'daily'
+
+    def items(self):
+        return [
+            'home', 'about', 'seo',
+            'social_media', 'web_development',
+            'graphic_design', 'app_development',
+        ]
+
+    def location(self, item):
+        return reverse(item)
+
+
+def sitemap_view_2(request):
+    sitemaps_ = {
+        'static': StaticViewSitemap,
+    }
+    return sitemap(request=request, sitemaps=sitemaps_)
 
 
 def robots_txt_view(request):
