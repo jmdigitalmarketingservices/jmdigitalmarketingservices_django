@@ -14,15 +14,11 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.contrib import sitemaps
 from django.urls import path
-from django.urls import reverse
 from django_distill import distill_path
-from django.contrib.sitemaps.views import sitemap
 
 from about import views as about
 from app_development import views as app_development
-from blog import views as blog
 from blog.models import Blog
 from contact import views as contact
 from graphic_design import views as graphic_design
@@ -50,6 +46,7 @@ def get_all_blog():
     for post in Blog.objects.filter(is_active=True):
         yield {'slug': post.slug}
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     distill_path('', home.view, name="home", distill_func=get_index),
@@ -61,7 +58,8 @@ urlpatterns = [
     distill_path('about/', about.view, name="about", distill_func=get_index),
     distill_path('seo-toronto/', seo.view, name="seo", distill_func=get_index),
     distill_path('social-media-marketing/', social_media.view, name="social_media", distill_func=get_index),
-    distill_path('web-development/', web_development.view, name="web_development", distill_func=get_index),
+    distill_path('web-design-development-toronto/', web_development.view, name="web_development",
+                 distill_func=get_index),
     distill_path('graphic-design/', graphic_design.view, name="graphic_design", distill_func=get_index),
     distill_path('app-development/', app_development.view, name="app_development", distill_func=get_index),
     # distill_path('blog/', blog.view, name="blog", distill_func=get_index),

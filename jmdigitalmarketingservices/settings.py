@@ -140,9 +140,40 @@ TINYMCE_DEFAULT_CONFIG = {
     'height': 360
 }
 
-META_SITE_PROTOCOL = 'https'
-META_SITE_DOMAIN = 'jmdigitalmarketingservices.ca'
-META_SITE_NAME = 'JM Digital Marketing Services'
+# SEO DEFAULT VALUES
+SEO_PROTOCOL = 'https'
+SEO_DOMAIN = 'jmdigitalmarketingservices.ca'
+
+SEO_CANONICAL_SITE_LINK = 'https://www.jmdigitalmarketingservices.ca/'
+
+SEO_SITE_TYPE = 'website'
+
+SEO_SITE_NAME = 'J. M. Digital Marketing Services'
+SEO_SITE_TITLE = 'Digital Marketing Agency Toronto | Digital Marketing Services Toronto'
+SEO_SITE_MAIN_DESCRIPTION = 'J. M. Digital Marketing Services, a digital marketing agency ' \
+                   'in Toronto which helps small & medium size businesses to grow, ' \
+                   'develop & succeed. Get in touch, today.'
+
+SEO_MAIN_SEO_IMAGE = STATIC_URL + 'images/SEO_Title_Image.jpg'
+
+SEO_FACEBOOK_ID = 'https://www.facebook.com/jmdigitalmarketingservices'
+SEO_TWITTER_ID = 'https://twitter.com/DigitalAgencyJm'
+SEO_INSTAGRAM_ID = 'https://www.instagram.com/jmdigitalmarketingservices/'
+SEO_LINKEDIN_ID = 'https://www.linkedin.com/company/j-m-digital-marketing-services'
+
+SEO_TWITTER_SITE = '@DigitalAgencyJm'
+SEO_TWITTER_CREATOR = SEO_TWITTER_SITE
+SEO_TWITTER_CARD = 'summary_large_image'
+
+SEO_TWITTER_MAIN_TITLE = 'Digital Marketing Agency Toronto | Digital Marketing Services Toronto'
+SEO_TWITTER_MAIN_DESCRIPTION = SEO_SITE_MAIN_DESCRIPTION
+SEO_TWITTER_IMAGE = SEO_MAIN_SEO_IMAGE
+
+SEO_LOCALE = 'en_US'
+
+META_SITE_PROTOCOL = SEO_PROTOCOL
+META_SITE_DOMAIN = SEO_DOMAIN
+META_SITE_NAME = SEO_SITE_NAME
 
 META_USE_TITLE_TAG = True
 META_USE_SCHEMAORG_PROPERTIES = True
@@ -150,4 +181,4 @@ META_USE_TWITTER_PROPERTIES = True
 META_USE_OG_PROPERTIES = True
 META_USE_SITES = True
 
-META_IMAGE_URL = STATIC_URL + 'images/SEO_Title_Image.jpg'
+META_IMAGE_URL = SEO_MAIN_SEO_IMAGE
